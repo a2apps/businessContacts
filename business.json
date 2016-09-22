@@ -1,0 +1,51 @@
+[
+    {
+        "category" : "Retail",
+        "city" : "Mumbai",
+        "Company" : "Raymonds",
+        "description" : "Cloth Marchant",
+        "email" : "support@raymonds.in",
+        "phone" : "0129-223223",
+        "state" : "Maharashtra",
+        "street_address" : "Ganpati Marg",
+        "years_in_business": 7,
+        "zipcode" : "100021"
+    },
+    {
+        "category" : "Wholesaler",
+        "city" : "Kolkata",
+        "Company" : "Patanjali",
+        "description" : "Ayurvedic Consumable and medicines",
+        "email" : "contact@patanjali.in",
+        "phone" : "848325629",
+        "state" : "West Bengla",
+        "street_address" : "Netaji Subhash Chandra Bose Marg",
+        "years_in_business": 12,
+        "zipcode" : "725263"
+    },
+    {
+        "category" : "Retail",
+        "city" : "Guwahati",
+        "Company" : "Cycle Agarbattis",
+        "description" : "Purfumed Agarbattis",
+        "email" : "support@cyagar.in",
+        "phone" : "03661-245289",
+        "state" : "Assam",
+        "street_address" : "B Barooah Road",
+        "years_in_business": 5,
+        "zipcode" : "781006"
+    },
+    {
+        "category" : "Wholesale",
+        "city" : "Vadodara",
+        "Company" : "H K Machines",
+        "description" : "Business machines",
+        "email" : "support@hkm.in",
+        "phone" : "2589-125689",
+        "state" : "Gujrat",
+        "street_address" : "Modi Marg",
+        "years_in_business": 7,
+        "zipcode" : "145268"
+    }
+]
+

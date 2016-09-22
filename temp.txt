@@ -1,0 +1,10 @@
+        category 
+        city 
+        Company 
+        description 
+        email 
+        phone 
+        state 
+        street_address 
+        years_in_business
+        zipcode 
