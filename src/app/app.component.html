@@ -111,54 +111,54 @@
       <div class="row">
           <div class="large-6 columns">
             <label>Company</label>
-            <input type="text" [(ngModel)]="Activecompany" placeholder="Company Name" #company>
+            <input type="text" [(ngModel)]="Activecompany" name="Activecompany" placeholder="Company Name" #company>
           </div>
           <div class="large-6 columns">
             <label>category</label>
-            <select #category>
+            <select #category [(ngModel)]="Activecategory" name="Activecategory">
               <option value="0">Select</option>
-              <option [(ngModel)]="Activecategory" *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
+              <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
             </select>
           </div>
       </div>
       <div class="row">
           <div class="medium-6 columns">
             <label>Years in Business</label>
-            <input type="text" [(ngModel)]="Activeyears_in_business" placeholder="Years in business" #years_in_business>
+            <input type="text" [(ngModel)]="Activeyears_in_business" name="Activeyears_in_business" placeholder="Years in business" #years_in_business>
           </div>
           <div class="medium-6 columns">
             <label>Description</label>
-            <textarea #description [(ngModel)]="Activedescription" placeholder="Description"></textarea>
+            <textarea #description [(ngModel)]="Activedescription" name="Activedescription" placeholder="Description"></textarea>
           </div>
       </div>
       <div class="row">
           <div class="medium-6 columns">
             <label>Phone</label>
-            <input type="text" [(ngModel)]="Activephone" placeholder="Contact Number" #phone>
+            <input type="text" [(ngModel)]="Activephone" name="Activephone" placeholder="Contact Number" #phone>
           </div>
           <div class="medium-6 columns">
             <label>Email</label>
-            <input type="text" [(ngModel)]="Activeemail" #email placeholder="email">
+            <input type="text" [(ngModel)]="Activeemail" name="Activeemail" #email placeholder="email">
           </div>
       </div>
       <div class="row">
           <div class="medium-6 columns">
             <label>Street Address</label>
-            <input type="text" [(ngModel)]="Activestreet_address" placeholder="Street Address" #street_address>
+            <input type="text" [(ngModel)]="Activestreet_address" name="Activestreet_address" placeholder="Street Address" #street_address>
           </div>
           <div class="medium-6 columns">
             <label>City</label>
-            <input type="text" [(ngModel)]="Activecity" #city placeholder="City">
+            <input type="text" [(ngModel)]="Activecity" name="Activecity" #city placeholder="City">
           </div>
       </div>
       <div class="row">
           <div class="medium-6 columns">
             <label>State</label>
-            <input type="text" [(ngModel)]="Activestate" placeholder="State" #state>
+            <input type="text" [(ngModel)]="Activestate" name="Activestate" placeholder="State" #state>
           </div>
           <div class="medium-6 columns">
             <label>Zip Code</label>
-            <input type="text" [(ngModel)]="Activezipcode" #zipcode placeholder="Zip Code">
+            <input type="text" [(ngModel)]="Activezipcode" name="Activezipcode" #zipcode placeholder="Zip Code">
           </div>
       </div>
       <div class="row">
@@ -219,7 +219,7 @@
             <td>
               <button (click)="changeState('extend', business.$key)" class="button">More</button>
               <button (click)="showEdit(business)" class="button secondary">Edit</button>
-              <button class="button alert">Delete</button>
+              <button (click)="deleteBusiness(business.$key)" class="button alert">Delete</button>
             </td>
           </tr>
         </tbody>
